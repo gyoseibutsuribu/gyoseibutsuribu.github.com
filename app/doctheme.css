@@ -1,0 +1,389 @@
+
+@font-face {
+    font-family: "Bizin Gothic Discord";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/BizinGothicDiscord-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/NotoSansJP-Regular.woff2") format("woff2");
+}
+
+* {
+    font-family: "Bizin Gothic Discord", sans-serif;
+}
+
+body {
+    color: #E0E0E0;
+    background-color: #223;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+}
+
+.main {
+    position: relative;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    border-bottom: 0.1em solid #2980b9;
+    padding: 0.1em 0.6em;
+    margin: 0.8em 0em 0.4em 0em;
+    display: inline-block;
+}
+
+body a {
+    color: #1096d9;
+}
+
+body a:hover {
+    color: #00c0f0;
+}
+
+nav {
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+    margin-right: 1em;
+    position: absolute; 
+    right: 0;
+}
+
+nav a {
+    font-size: 1.4em;
+    color: #1096d9;
+    text-decoration: none;
+    padding: 0.4em 0.6em;
+}
+
+nav a:hover {
+    background-color: #21373a;
+    color: #00c0f0;
+    border-radius: 0.3em;
+}
+
+nav p {
+    font-size: 1.4em;
+    color: #999;
+    text-decoration: none;
+    padding: 0.4em 0.6em;
+    cursor: default;
+}
+
+/* 区切り線 */
+nav .divider {
+    height: 1.5rem;
+    width: 0.1rem;
+    border-radius: 0.05rem;
+    background-color: #555;
+}
+
+h3 {
+    margin: 0.4em 0em;
+    font-size: 1.4em;
+}
+
+ul li {
+    line-height: 1.5em;
+}
+
+.my-works {
+    color: #E0E0E0;
+    background-color: #000;
+    text-decoration: none;
+    padding: 0.2em 0.3em;
+}
+
+.my-works:visited {
+    color: #E0E0E0;
+    background-color: #000;
+}
+
+.my-works:hover {
+    background-color: #23393c;
+    color: #84d0f7;
+    border-radius: 0.3em;
+}
+
+.header {
+    height: 3.6em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em 0em;
+    margin: 0em;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+
+.header-title {
+    display: flex;
+    text-decoration: none;
+    font-size: 2em;
+    font-style: italic;
+    color: #dfdfdf;
+    align-items: center;
+    margin-left: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-title:hover {
+    color: #dfdfdf;
+}
+
+#github-logo-white {
+    width: 1.4em;
+    height: 1.4em;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#x-logo-white {
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0.1em 0em;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#qiita-icon-white {
+    width: 1.4em;
+    height: 1.4em;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sns-link-span {
+    display: inline-block;
+}
+
+.sns-link {
+    display: flex;
+    gap: 0.2em;
+    font-weight: bold;
+    color: #E0E0E0;
+    text-decoration: none;
+    padding: 0.3em 0.5em;
+    line-height: 1.8em;
+    margin-right: 0.4em;
+}
+
+.sns-link:hover {
+    display: flex;
+    gap: 0.2em;
+    font-weight: bold;
+    background-color: #18282a;
+    color: #00c0f0;
+    border-radius: 0.3em;
+}
+
+.footer {
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    color: #999;
+    cursor: default;
+}
+
+.document {
+    border-radius: 0.6em;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.6);
+}
+
+.works-image {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.4em;
+}
+
+.not-found {
+    text-align: center;
+    margin-top: 12em;
+    margin-bottom: 14em;
+}
+
+.not-found-h1 {
+    font-size: 3em;
+    color: #E0E0E0;
+    margin: 1.6em 0em;
+}
+
+#page-top {
+    text-align: center;
+}
+
+#top-image {
+    border-radius: 50%;
+}
+
+#title-top {
+    color: #E0E0E0;
+    text-align: center;
+    margin: 0em 0em 1.6em 0em;
+    cursor: default;
+}
+
+.link-button {
+    font-size: 1.8em;
+    color: #E0E0E0;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
+    padding: 0.4em 1.6em;
+    border-radius: 0.3em;
+    margin: 1em 0.6em;
+    cursor: pointer;
+    border: 0.05em solid #E0E0E0;
+}
+
+/* ボタンのホバー効果 */
+.link-button:hover {
+    color: #00c0f0;
+    border: 0.05em solid #00c0f0;
+}
+
+@media (max-width: 1023px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+    .document {
+        margin: 1.6em 0.4em;
+        padding: 0em 2em 1em 2em;
+    }
+
+    .navlink {
+        font-size: 1.4em;
+    }
+
+    .blank {
+        height: 5em;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 0em 0em 2em 0em;
+    }
+
+    #image-turtle {
+        width: 90%;
+        height: auto;
+    }
+
+    #image-shilitori {
+        width: 85%;
+        height: auto;
+    }
+
+    #image-easyturtle {
+        width: 90%;
+        height: auto;
+    }
+
+    #image-lsb {
+        width: 85%;
+        height: auto;
+    }
+
+    #image-tkwidgets {
+        width: 70%;
+        height: auto;
+    }
+
+    #page-top {
+        margin-top: 6em;
+        margin-bottom: 6em;
+    }
+    
+    #top-image {
+        width: 16em;
+        height: auto;
+    }
+    
+    #title-top {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 1rem;
+    }
+
+    .document {
+        margin: 2em 10em;
+        padding: 2em;
+        padding-top: 1.4em;
+    }
+
+    .blank {
+        height: 6em;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 0em 0em 2em 0em;
+    }
+
+    #image-turtle {
+        width: 55%;
+        height: auto;
+    }
+    
+    #image-shilitori {
+        width: 50%;
+        height: auto;
+    }
+    
+    #image-easyturtle {
+        width: 55%;
+        height: auto;
+    }
+    
+    #image-lsb {
+        width: 50%;
+        height: auto;
+    }
+    
+    #image-tkwidgets {
+        width: 30%;
+        height: auto;
+    }
+
+    #page-top {
+        margin-top: 4em;
+        margin-bottom: 6em;
+    }
+    
+    #top-image {
+        width: 18em;
+        height: auto;
+    }
+    
+    #title-top {
+        font-size: 2.4em;
+    }
+}
